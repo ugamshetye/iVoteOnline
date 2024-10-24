@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form label {
+            margin: 10px 0 5px;
+        }
+
+        .login-form input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .options {
+            margin-top: 20px;
+        }
+
+        .option-button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .option-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ADMIN ACCESS GRANTED</h1>
+        <div class="options">
+            <h2>Actions</h2>
+            <button class="option-button" onclick="location.href='add_voter.php'">Add Voter</button>
+            <button class="option-button" onclick="location.href='add_candidate.html'">Add Candidate</button>
+            <button class="option-button" onclick="location.href='result.php'">View Result</button>
+            <button class="option-button" onclick="location.href='electoralroll.php'">View Electoral Roll</button>
+            <button class="option-button" onclick="location.href='reset.php'">Reset cadidate data</button>
+            <button class="option-button" onclick="location.href='confirmresetvoted.php'">Reset voters voting status</button>
+        </div>
+        <br><a href="chg_admin_pass.php">Change Password</a> &nbsp; <a href="login.html" style="float: right;">Log out</a>
+    </div>
+</body>
+</html>

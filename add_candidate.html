@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Candidate</title>
+    <link rel="stylesheet" href="add_candidate_style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+<div class="navbar">
+    <img name="logoname" src="logoname.png" height="40px" width="150px">
+    <a href="login.html">Login</a>
+    <a href="index.html">Home</a>
+</div>
+    <div class="container">
+        <h1>Add Candidate</h1>
+        <form action="add_candidate.php" method="POST">
+            <!-- Candidate Name -->
+            <label for="name">Candidate Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter candidate's full name">
+
+            <!-- Candidate Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required placeholder="Enter candidate's age" min="18">
+
+<!-- Candidate's department Dropdown -->
+<label for="department">Department:</label>
+<select id="department" name="department" required>
+    <option value="">Select Department</option>
+    <option value="Comp">Computer</option>
+    <option value="Mech">Mechanical</option>
+    <option value="IT">Information Technology</option>
+    <option value="Ecomp">Electronics & Computer</option>
+</select>
+            
+<!-- Candidate's current year of study Dropdown -->
+<label for="year">Current year of study:</label>
+<select id="year" name="year" required>
+    <option value="">Select Current year of study</option>
+    <option value="FE">First year</option>
+    <option value="SE">Second year</option>
+    <option value="TE">Third year</option>
+    <option value="BE">Fourth Year</option>
+</select>
+
+
+            <!-- Candidate Designation Dropdown -->
+            <label for="designation">Designation:</label>
+            <select id="designation" name="designation" required>
+                <option value="">Select Designation</option>
+                <option value="general-secretary">General Secretary</option>
+                <option value="cultural-secretary">Cultural Secretary</option>
+                <option value="magazine-secretary">Magazine Secretary</option>
+                <option value="sports-secretary">Sports Secretary</option>
+            </select>
+
+            <!-- Candidate Panel -->
+            <label for="party">Panel Name:</label>
+            <input type="text" id="party" name="party" placeholder="Enter panel name">
+
+            <!-- Submit Button -->
+            <button type="submit">Add Candidate</button>
+
+            <br><br><a href="admindashboard.html">Return to admin dashboard</a>
+        </form>
+    </div>
+</body>
+</html>
